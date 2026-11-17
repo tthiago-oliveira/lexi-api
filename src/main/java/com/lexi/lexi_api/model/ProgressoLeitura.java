@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 public class ProgressoLeitura {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idProgresso;
+    private Long idProgresso;
 
     private Integer posicaoLeitura = 0;
     private Double percentual = 0.0;
