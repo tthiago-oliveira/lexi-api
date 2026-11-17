@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 public class ContaExterna {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idConta;
+    private Integer idConta;
 
     @Column(nullable = false)
     private String provedor;

@@ -8,7 +8,7 @@ import lombok.Data;
 public class PreferenciaLeitura {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idPreferencia;
+    private Integer idPreferencia;
 
     private Integer tamanhoFonte = 16;
     private Double espacamentoLetras = 1.0;

@@ -8,7 +8,7 @@ import lombok.Data;
 public class Autor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idAutor;
+    private Integer idAutor;
 
     @Column(nullable = false)
     private String nome;

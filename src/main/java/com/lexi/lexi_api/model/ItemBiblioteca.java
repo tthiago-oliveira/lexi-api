@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 public class ItemBiblioteca {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idItem;
+    private Integer idItem;
 
     private Boolean favorito = false;
     private LocalDateTime dataAdicao = LocalDateTime.now();

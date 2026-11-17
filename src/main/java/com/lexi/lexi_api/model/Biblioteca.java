@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 public class Biblioteca {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idBiblioteca;
+    private Integer idBiblioteca;
 
     private LocalDateTime dataCriacao = LocalDateTime.now();
 

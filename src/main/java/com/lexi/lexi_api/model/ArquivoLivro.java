@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 public class ArquivoLivro {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idArquivo;
+    private Integer idArquivo;
 
     @Column(nullable = false)
     private String nomeArquivo;
