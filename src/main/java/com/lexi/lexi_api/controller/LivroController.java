@@ -81,6 +81,14 @@ public class LivroController {
 
         return ResponseEntity.status(HttpStatus.CREATED).body(livroRepository.save(livro));
     }
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> excluir(@PathVariable Long id) {
+        if (!livroRepository.existsById(id)) {
+            return ResponseEntity.notFound().build();
+        }
+        livroRepository.deleteById(id);
+        return ResponseEntity.noContent().build();
+    }
 
     public record LivroDTO(String titulo, String autor, String genero, Integer anoPublicacao, String conteudo) {}
 }
